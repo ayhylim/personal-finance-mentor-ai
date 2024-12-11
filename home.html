@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Mentor</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Personal Finance Mentor</h1>
+    <form id="finance-form">
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="IDR" selected>IDR</option>
+      </select>
+
+      <label for="income">Income:</label>
+      <input type="text" id="income" placeholder="Enter your income">
+
+      <label for="expenses">Expenses:</label>
+      <input type="text" id="expenses-makan" placeholder="Food">
+      <input type="text" id="expenses-transport" placeholder="Transport">
+      <input type="text" id="expenses-hiburan" placeholder="Entertainment">
+      <input type="text" id="expenses-lainnya" placeholder="Others">
+
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <div id="chart-section" style="padding: 50px; margin-top: 50px;">
+    <h2>Grafik Keuangan</h2>
+    <canvas id="financeChart" width="400" height="200"></canvas>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
