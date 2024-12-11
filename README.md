@@ -1,2 +1,2 @@
 # personal-finance-mentor-ai
-an AI that can help calculate your finances
+An AI that can help calculate your finances
