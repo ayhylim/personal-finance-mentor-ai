@@ -12,12 +12,10 @@ async function getExchangeRates(baseCurrency) {
     return null;
   }
 }
-
 // Function to clean and format currency input
 function cleanCurrency(value) {
   return parseFloat(value.replace(/\./g, "").replace(/,/g, "")) || 0;
 }
-
 // Function to validate inputs
 function validateInputs(income, expenses) {
   if (isNaN(income) || income <= 0) {
@@ -32,8 +30,8 @@ function validateInputs(income, expenses) {
 
   return true;
 }
-
 // Main calculation logic and chart update
+
 async function calculate() {
   const currency = document.getElementById("currency").value;
   const income = cleanCurrency(document.getElementById("income").value);
@@ -71,10 +69,8 @@ async function calculate() {
   const expensePercentages = Object.values(expenses).map(exp => (exp / incomeInIDR) * 100);
   updateFinanceChart(Object.keys(expenses), expensePercentages);
 }
-
 // Function to create or update the chart
 let financeChart = null;
-
 function updateFinanceChart(labels, data) {
   const ctx = document.getElementById("financeChart").getContext("2d");
 
@@ -129,6 +125,5 @@ function updateFinanceChart(labels, data) {
   // Show the chart section
   document.getElementById("chart-section").style.display = "block";
 }
-
 // Add event listener to button
 document.getElementById("calculate-btn").addEventListener("click", calculate);

@@ -32,10 +32,31 @@
     </form>
     <div id="result"></div>
   </div>
+  <div class="container-converter">
+    <div class="converter">
+      <h1>Currency Converter</h1>
+      <input type="text" id="amount" placeholder="Enter amount" />
+      <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="IDR">IDR</option>
+          <option value="EUR">EUR</option>
+          <!-- Tambahkan lebih banyak mata uang di sini -->
+      </select>
+      <select id="toCurrency">
+          <option value="IDR">IDR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <!-- Tambahkan lebih banyak mata uang di sini -->
+      </select>
+      <button onclick="convertCurrency()">Convert</button>
+      <div class="result" id="result"></div>
+  </div>
+  </div>
   <div id="chart-section" style="padding: 50px; margin-top: 50px;">
     <h2>Grafik Keuangan</h2>
     <canvas id="financeChart" width="400" height="200"></canvas>
   </div>
-  <script src="./script.js"></script>
+  <script src="./convertCurrency.js"></script>
+  <script src="./getExchangeRates.js"></script>
 </body>
 </html>
