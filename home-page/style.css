@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(90deg, #4c718c, #b3d3e4, #4c718c);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .content {
+    color: black;
+    text-align: center;
+}
+
+.hero .date {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hero .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #e2e5e7;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Chatbot Button */
+.chatbot-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e2e5e7;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.chat-btn:hover {
+    transform: scale(1.05);
+}
